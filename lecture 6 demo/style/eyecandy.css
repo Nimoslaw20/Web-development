@@ -1,0 +1,63 @@
+/*Initialising the body of the web page*/ 
+body {background-color: none;
+      text-align: center;
+      margin: 0px;
+      padding: 0px;
+      z-index: 1;}
+
+/*Relates also to the "Body" of the page*/ 
+div#top {position: relative;
+        margin-top: 50px; /* Add a top margin to avoid content overlay */}
+
+/* The navigation bar: "head" */
+#head {overflow: hidden;
+    background-color: grey;
+    position: fixed; /* Set the "head" to fixed position */
+    top: 0; /* Position the "head" at the top of the page*/
+    width: 100%; /* Full width of web page*/
+
+
+    /*margin: 0 auto ; or write long version as below:*/
+          margin-top:0;
+          margin-right:auto;
+          margin-bottom:0;
+          margin-left:auto;}
+
+/* Links inside the navigation bar or the head*/
+#head a {
+    float: left;
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 8px 10px;
+    text-decoration: none;}
+
+/*Relates to Hyperlinks*/
+a {text-decoration: none;
+   font-weight: bold; 
+   color: blue;}
+a:hover {background-color: #fff; 
+  color:#ffb81c;}
+a:active {font-style:italics;}
+a:visited {color: #8c4779;}
+
+/*Form for registration*/
+#form {text-align: left;
+      margin-left: 5%;}
+
+/*Relates to the "Lorem Ipsum" text*/
+div#content {height: 800px;
+      width: 700px;
+      margin-top: -40px;
+      margin-left: 340px;
+      /*position: relative;absolute;*/
+      z-index: 2;}
+p.title {font-weight: bold;}
+
+/*Relates to the Footer*/
+.footer {color: grey;
+		 position: relative;/*absolute;*/
+		 top: 1em;
+		 right: 1em;
+		 font-size: 0.7em;
+		 border-spacing: 1em;}

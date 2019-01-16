@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- Read more about jQuery at https://www.w3schools.com/jquery/ -->
+<html lang="en">
+	<head>
+		<!-- CSS -->
+		<link rel="stylesheet" href="demo_css.css">
+		
+		<!-- Google Content Delivery Network (CDN): -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
+		<!-- jQuery Code: Event-Driven Concept-->
+		<script>
+			$(document).ready(
+				function(){
+			    $("button").click(
+			    	function(){
+			        alert($("#auc").attr("href"));
+			    });
+			});
+		</script>
+	</head>
+	<body>
+
+		<p><a href="https://www.ashesi.edu.gh" id="auc">Ashesi University Website</a>
+			<br>
+			<br>
+			
+			<!-- Can you try setting an ID for "<button>" with
+			 'name="Mind Your Own Business!". Then CHANGE the 
+			 jQuery code above to show the 'value' of attribute 
+			 'name'instead-->
+			<button>Show Attribute Value</button>
+		</p>
+	</body>
+</html>

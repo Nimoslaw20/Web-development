@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Application Forms</h2>
+
+
+<form method="GET" action="submission.php" onsubmit="return validate();">
+
+  <fieldset>
+    <legend>Personal information:</legend>
+    First name:<br>
+    <input type="text" name="name" placeholder="Name" id="name">
+    <br>
+    Last name:<br>
+    <input type="email" name="email" placeholder="Email" id="email">
+    <br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+
+</body>
+
+<script type=text/javascript">
+    function validate(){
+
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        alert(name);
+
+        if (name == "" || email == "")
+            alert("Please enter your name and email")
+            return false;
+
+        }
+        else{
+            var xhttp = new XMLHttpRequest():
+            xhttp.onreadystatechange =function(){
+                if (this.readyState ==4 && this.status == 200){
+                    document.getElementById("status").innerHTML = this.responseText;
+
+                }
+            };
+            xhttp.open("GET","submission.php?name=" + name + "&email" + email, true);
+            xhttp.send();
+        }
+
+    //     else 
+    //         return true;
+    // }
+
+    // function loaddoc(){
+    //     if (validate()){
+    //         return;
+    //     }
+    // }
+
+</script>
+</html>

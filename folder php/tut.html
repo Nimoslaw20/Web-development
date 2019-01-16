@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tutorial</title>
+</head>
+<body>
+	<form>
+
+
+		<input type="passowrd" name="password" placeholder="password" id="password">
+		<input type="email" name="email" placeholder="Email" id="email">
+		<input type="button" name="submitBtn" onclick="loadDoc()" value="Submit">
+	</form>
+	<p id="status"></p>
+</body>
+
+
+
+<script type="text/javascript">
+	function loadDoc() {
+		var email = document.getElementById("email").value;
+		var pword = document.getElementById("password").value;
+
+		if (email == "" || pword == "") {
+			document.getElementById("status").innerHTML = "Please enter an email and password";
+		}
+		else{
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+				//document.getElementById('loader).style.display = "none";
+				if (this.responseText =='yes')
+					window.location.href = "index.html";
+				else 
+					document.getElementById("status").innerHTML = "Wrong password and email";
+
+			}
+			};
+
+			xhttp.open("GET", "submission.php?email=" + email+"&password=" + pword, true);
+			xhttp.send();
+		}
+	}
+	//loadDoc();
+</script>
+</html>

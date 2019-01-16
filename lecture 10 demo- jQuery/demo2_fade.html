@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- Read more about jQuery at https://www.w3schools.com/jquery/ -->
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>jQuery Example 2</title>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="demo_css.css">
+
+		<!-- Google Content Delivery Network (CDN): -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
+		<!-- jQuery Code: Event-Driven Concept-->
+		<script type="text/javascript"> 
+
+			$(document).ready(
+				function(){ 
+					$("#fadeControl").mouseover(
+						function(){
+							$("#fadeAction").fadeOut('slow'); 
+						}
+					); 
+					
+					$("#fadeControl").mouseout(
+						function(){ 
+							$("#fadeAction").fadeIn('slow'); 
+						}
+					); 
+				}
+			); 
+		</script>
+	</head>
+
+	<body>
+		<div id="fadeControl">Mouse over me...</div>
+
+		<div id="fadeAction">To fade me...</div>
+	</body>
+
+</html> 

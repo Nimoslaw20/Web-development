@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic Calculator</title>
+        <link rel="stylesheet" type="text/css" href="compute.css">
+        <script type="text/javascript" src="compute.js"></script>
+    </head>
+    <body>
+        <h1><center>Calculator</center></h1>
+        <div id='calc-contain'>
+  
+          <form name="calculator">
+
+            <input type="number" name="finalAns" id="fin"> <br><hr>
+            
+            <input type="number" id="num1Add" />  <input type="number" id="num2Add" />
+            <br>
+             <input type="button" value ="ADD" onclick="calculator.finalAns.value=add(+(calculator.num1Add.value),+(calculator.num2Add.value))"/>
+           
+
+           
+              <input type="button" value ="SUBTRACT" onclick="calculator.finalAns.value=subtract(+(calculator.num1Add.value),+(calculator.num2Add.value))"/>
+            <br>
+             <p> </p>
+            <p> </p>
+            <p> </p>
+            <p> </p>
+            <br>
+            
+            
+              <input type="button" value ="MULTIPLY" onclick="calculator.finalAns.value=multiply(+(calculator.num1Add.value),+(calculator.num2Add.value))"/>
+         
+
+            
+              <input type="button" value ="DIVIDE" onclick="calculator.finalAns.value=divide(+(calculator.num1Add.value),+(calculator.num2Add.value))"/>
+            <br>
+             <p> </p>
+            <p> </p>
+            <p> </p>
+            <p> </p>
+            <br>
+
+          
+              <input type="button" value ="AVERAGE" onclick="calculator.finalAns.value=average(+(calculator.num1Add.value),+(calculator.num2Add.value))"/>
+        
+
+             
+              <input type="button" value ="SQUARE" onclick="calculator.finalAns.value=square(+(calculator.num1Add.value)) "/>
+            <br>
+            
+           <p>NB: First provided space will be used for calculating square</p> 
+
+  
+    
+          </form>
+
+
+          
+        </div>
+        <hr>
+        <h1><center>Simple Interest</center></h1>
+
+        <div name="comp-contain">
+            <form name="compCalc">
+                principal: <input type="text" name="princ"/>
+                rate: <input type="text" name="rate"/>
+                interest: <input type="text" name="int"/><br>
+                <input type="button" name="calcIt" value="Simple Interest" onclick="simpleInterest(+(compCalc.princ.value),+(compCalc.rate.value),+(compCalc.int.value))">
+
+                
+            </form>
+        </div>
+        <hr>
+
+        <h1><center>Rectangle Area</center></h1>
+
+        <div name="comp-contain">
+            <form name="compArea">
+                length: <input type="text" name="length"/>
+                breadth: <input type="text" name="breadth"/>
+                <br>
+                <input type="button" name="calcIt" value="Area" onclick="areaRectangle(+(compArea.length.value),+(compArea.breadth.value))">
+
+                
+            </form>
+        </div>
+        <hr>
+
+        <h1><center>Perimeter</center></h1>
+
+        <div name="comp-contain" >
+            <form name="compPer">
+                length: <input type="text" name="length"/>
+                breadth: <input type="text" name="breadth"/>
+                <br>
+                <input type="button" name="calcIt" value="Perimeter" onclick="perimeter(+(compPer.length.value),+(compPer.breadth.value))">
+
+                
+            </form>
+        </div>
+        <hr>
+
+
+        <h1><center>Celcius to Fahrenheit</center></h1>
+
+        <div name="comp-contain">
+            <form name="compFar">
+                Celcius: <input type="text" name="cel"/>
+                
+                <br>
+                <input type="button" name="calcIt" value="Fahrenheit" onclick="celciusFahrenheit(+(compFar.cel.value))">
+
+                
+            </form>
+        </div>
+        <hr>
+
+        <input type="button" name="cars" value="view cars" onclick="carArray()">
+        <p id="demo"></p>
+
+    </body>
+</html>

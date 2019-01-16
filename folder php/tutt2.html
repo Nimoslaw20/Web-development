@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tutorial</title>
+</head>
+<body>
+	<form method ="POST" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF]); ?>">
+
+
+		<input type="passowrd" name="password" placeholder="password" id="password">
+		<input type="email" name="email" placeholder="Email" id="email">
+		<input type="button" name="submitBtn" onclick="loadDoc()" value="Submit">
+	</form>
+	<p id="status"></p>
+</body>

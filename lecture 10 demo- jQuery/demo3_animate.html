@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- Read more about jQuery at https://www.w3schools.com/jquery/ -->
+<html lang="en">
+	<head>
+		<!-- CSS -->
+		<link rel="stylesheet" href="demo_css.css">
+		
+		<!-- Google Content Delivery Network (CDN): -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<!-- jQuery Code: Event-Driven Concept-->
+		<script> 
+			$(document).ready(
+				function(){
+					/*Note the reference to "button" with event ".click()"*/
+				    $("button").click(
+				    	function(){
+					        var div = $("div");
+					        div.animate({height: '500px', opacity: '0.4'}, "slow");
+					        div.animate({width: '800px', opacity: '0.8'}, "slow");
+					        div.animate({height: '100px', opacity: '0.4'}, "slow");
+					        div.animate({width: '100px', opacity: '0.8'}, "slow");
+					        div.animate({fontSize: '3em'}, "slow");
+				    	});
+				});
+		</script> 
+	</head>
+	<body>
+		
+			<!--Button to initiate animation -->
+			<button>Start Animation</button>
+			<br>
+			<!-- Instructions -->
+			<p>
+				<ul>Note:
+					<li>By default, all HTML elements have a static position, and cannot be moved.</li><br>
+					<li>To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</li>
+				</ul> 
+			</p>
+			<br>
+			<br>
+		<div id="anim">
+			<!-- Note the style -->
+			<div style="background:#98bf21;height:100px;width:100px;position:absolute;">Wow!</div>
+
+		</div>
+
+	</body>
+</html>

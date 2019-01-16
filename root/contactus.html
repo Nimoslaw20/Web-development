@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+
+</head>
+<body>
+  <div class="text-center container" style="background-color: #922B21; color: white; padding: 1%"><h1>Contact Us</h1></div>
+  <div class="container">
+    <form name="myForm" id= "Formcheck" class="form-horizontal" method="post" onsubmit="return validate()">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="firstname">Enter your Firstname:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="name" placeholder="Enter Firstname" name="name" >
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="surname">Enter your Surname:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="surname" placeholder="Enter Surname" name="surname" >
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="email">Email:</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" >
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="age">Enter your age:</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="age" placeholder="Enter Age" name="age" >
+          </div>
+        </div>
+
+
+        <div class="form-check-input"><br>Sexual Orientation: 
+          <label class="form-check-label" for="check1">
+            <input type="checkbox" class="form-check-input" id="check1" name="vehicle1" value="something" checked>Homosexual
+          </label>
+
+          <label class="form-check-label" for="check1">
+            <input type="checkbox" class="form-check-input" id="check1" name="vehicle1" value="something" checked>Heterosexual
+          </label>
+
+          <label class="form-check-label" for="check1">
+            <input type="checkbox" class="form-check-input" id="check1" name="vehicle1" value="something" checked>Bisexual
+          </label>
+        </div><br>
+
+
+        <div class="form-check-inline">Favorite Food:
+          <label class="form-check-label" for="check1">
+            <input type="checkbox" class="form-check-input" id="check1" name="vehicle1" value="something" checked>Fufu
+          </label>
+          <label class="form-check-label" for="check1">
+            <input type="checkbox" class="form-check-input" id="check1" name="vehicle1" value="something" checked>Ampesi
+          </label>
+          <label class="form-check-label" for="check1">
+            <input type="checkbox" class="form-check-input" id="check1" name="vehicle1" value="something" checked>Rice
+          </label>
+        </div><br>
+
+    Country
+    <select name="drop_down">
+      <option value="None" selected ="selected">--select country--</option>
+      <option value="Ghana">Ghana</option>
+      <option value="Nigeria">Nigeria</option>
+      <option value="England">England</option>
+      <option value="USA">USA</option>
+      <option value="Togo">Togo</option>
+      <option value="South Africa">South Africa</option>
+    </select> 
+  </form>
+  <br><br>
+     
+
+    <div class="form-group">
+      <label for="comment">Add some thoughts of your own:</label>
+      <textarea class="form-control" rows="5" id="comment"></textarea>
+    </div>
+
+
+<div class="form-group">
+          <label class="control-label col-sm-2" for="surname">Care to give us your password?:</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="passd" placeholder="Password" name="pwd" >
+          </div>
+        </div>
+
+
+    <div class="form-group">        
+      <div class="col-sm-2">
+        <button id="button1" type="submit" value= "send" name = "Submit" class="btn btn-lg btn-group-justified btn-block" style="background-color: #922B21; color: white">Submit Query</button>
+        <button id= "button2" type="reset" value="Reset" class="btn btn-lg btn-group-justified btn-block" style="background-color: #922B21; color: white">Reset</button>
+      </div>
+      <p id="dems"></p>
+    </div>
+  </fieldset>
+  </form>
+</div>
+
+<script src="scripts/javascript.js "></script>
+</body>
+</html>

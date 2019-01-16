@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="main.css">
+  <script type="text/javascript" src="math.js"></script>
+<body background= "bg2.jpeg">
+
+<h1><center>Simple Calculator</center></h1>
+
+<center>
+    <div class="legend1">
+        <fieldset>
+    <div class="legend1" name="res">
+    <label for="final"><strong>Result</strong></label>
+    <input type="text" id="rnum" name="lnumb" placeholder=" ">
+    </div>
+    <br><br>
+
+    <div class="legend1" name="fnum">
+        <label for="fname">Input 1</label>
+        <input type="number" id="ffnum" name="fnumb" placeholder="Input1..">
+    </div>
+    <br><br>
+    
+    <div  class="legend1" name="snum">
+    <label for="lname">Input 2 </label>
+    <input type="number" id="ssnum" name="lnumb" placeholder="Input2..">
+    </div>
+    <br><br>
+    
+    <div>
+    <input type="button" name="add" value="ADD" onclick="rnum.value=add(+(ffnum.value),+(ssnum.value))">
+    <input type="button" name="add" value="SUBTRACT" onclick="rnum.value=sub(+(ffnum.value),+(ssnum.value))">
+    <input type="button" name="add" value="MULTIPLY" onclick="rnum.value=mul(+(ffnum.value),+(ssnum.value))">
+    <input type="button" name="add" value="DIVIDE" onclick="rnum.value=divd(+(ffnum.value),+(ssnum.value))">
+    <input type="button" name="add" value="AVERAGE" onclick="rnum.value=avg(+(ffnum.value),+(ssnum.value))">
+    <input type="button" name="add" value="SQUARE" onclick="rnum.value=squ(+(ffnum.value),+(ssnum.value))">
+    </div>
+
+</fieldset>
+</div>
+</center>
+
+
+
+<center
+<div class="legend1">
+    <fieldset>
+    <legend><strong>Simple Interest</strong></legend>
+    <label for="final">Principal</label>
+    <input type="number" id="pnum" name="lnumb" placeholder=" ">
+    <label for="fname">Rate</label>
+    <input type="number" id="rnum" name="fnumb" placeholder=" ">
+    <label for="fname">Time</label>
+    <input type="number" id="tnum" name="fnumb" placeholder=" ">
+    <div class="legend1"><br>
+    <input type="text" id="sinum" name="lnumb" placeholder=" ">
+    <input type="button" name="simple" value="Result" onclick="sinum.value=simple(+(pnum.value),+(rnum.value), +(tnum.value))">
+    
+  </div>
+  </fieldset>
+</div>
+</center>
+
+<center>
+<div class="legend1">
+    <fieldset>
+    <legend><strong>Area of Rectangle</strong></legend>
+    <label for="final">Length </label>
+    <input type="number" id="lenum" name="lnumb" placeholder="Input1.. ">
+    <label for="fname">Breath</label>
+    <input type="number" id="brnum" name="fnumb" placeholder="Input2..">
+    <div class="legend1"><br>
+    <input type="text" id="area" name="lnumb" placeholder=" ">
+    <input type="button" name="simple" value="Result" onclick="area.value=simple(+(lenum.value),+(brnum.value))">
+    
+  </div>
+  </fieldset>
+</div>
+</center>
+
+<center>
+<div class="legend1">
+    <fieldset>
+    <legend><strong>Perimeter of Rectangle</strong></legend>
+    <label for="final">Length </label>
+    <input type="number" id="lengnum" name="lnumb" placeholder=" ">
+    <label for="fname">Breath</label>
+    <input type="number" id="brenum" name="fnumb" placeholder=" ">
+    <div class="legend1"><br>
+    <input type="text" id="peri" name="lnumb" placeholder=" ">
+    <input type="button" name="simple" value="Result" onclick="peri.value=simple(+(lengnum.value),+(brenum.value))">
+    
+  </div>
+  </fieldset>
+</div>
+</center>
+
+<center>
+<div class="legend1">
+    <fieldset>
+    <legend><strong>Temperature</strong></legend>
+    <label for="final">Celsius</label>
+    <input type="number" id="CEL" name="lnumb" placeholder="*C ">
+    <input type="text" id="celre" name="lnumb" placeholder=" ">
+    <input type="button" name="simple" value="Fahrenheit" onclick="celre.value=simple(+(pnum.value),+(rnum.value), +(tnum.value))">
+    
+</div>
+</fieldset>
+</center>
+
+</body>
+</html>
